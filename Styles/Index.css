@@ -54,4 +54,16 @@ header {
 
     width: 35%; 
     background-color: #f0f0f0;
+
+    
+}
+
+.OffersText{
+
+    color: red;
+     text-align: center;
+}
+
+.flightsOnSpecial {
+    width: 100%;
 }
