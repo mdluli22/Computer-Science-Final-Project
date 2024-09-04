@@ -66,4 +66,17 @@ header {
 
 .flightsOnSpecial {
     width: 100%;
+
+  
+}
+
+.specialBtns{
+    text-align: center;
+
+}
+
+.viewFlightBtn{
+
+    background-color: #42474a;
+    color: white;
 }
