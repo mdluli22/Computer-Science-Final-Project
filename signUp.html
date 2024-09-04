@@ -5,53 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syntax On Air</title>
 </head>
-<body style="background-color:#f7f7f7;">
-    <header style="text-align:center;"> 
-        <td><h1 style="color: #42474a;">Welcome</h1></td>
-        <img src="images/FullLogo_Transparent_NoBuffer.png" width=100% height="225px"/>
+<body style="background-color:#f7f7f7; font-family: Arial, sans-serif;">
+
+    <header style="text-align:center;">
+        <h1 style="color: #42474a;">Welcome</h1>
+        <img src="images/FullLogo_Transparent_NoBuffer.png" width="100%" height="225px"/>
     </header>
-    <nav>
-        <table>
+
+    <nav style="background-color: #42474a;">
+        <table style="width: 100%; text-align: center;">
             <tr>
-                <td>
-                    <ul><li> <a href="index.html">Home</a></li></ul>
-                </td>
-                <td>
-                    <ul><li><a href="logIn.html">Login</a></li></ul>
-                </td>
-                <td>
-                    <ul><li><a href="signUp.html">Sign up</a></li></ul>
-                </td>
-                <td>
-                    <ul><li><a href="about.html">About Us</a></li></ul>
-                </td>
-                <td>
-                    <ul><li><a href="review.html">Reviews</a></li></ul>
-                </td>
+                <td><a href="index.html" style="color: white;">Home</a></td>
+                <td><a href="logIn.html" style="color: white;">Login</a></td>
+                <td><a href="signUp.html" style="color: white;">Sign up</a></td>
+                <td><a href="about.html" style="color: white;">About Us</a></td>
+                <td><a href="review.html" style="color: white;">Reviews</a></td>
             </tr>
         </table>
     </nav>
-    <section>
+
+    <section style="text-align: center;">
         <form>
-            <label >First Name</label><br>
-            <input type="text"><br>
+            <label for="firstName" >First Name</label><br>
+            <input type="text" id="firstName"><br>
+            
+            <label for="surname">Surname</label><br>
+            <input type="text" id="surname"><br>
 
-            <label >Surname</label><br>
-            <input type="text"><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email"><br>
+            
+            <label for="password">Password</label><br>
+            <input type="password" id="password"><br>
+            
 
-            <label >Email</label><br>
-            <input type="email"><br>
+            <button type="button" style="background-color: #42474a; color: white;">Sign Up</button>
+        </form>
 
-            <label >Password</label><br>
-            <input type="password"><br>
-
-          </form>
-
-          <button type="button">Sign Up</button>
+        <h3>
+            Already have an account? <a href="logIn.html" style="color: #42474a;">Log in</a>
+        </h3>
     </section>
-    <h3>Already have an account?
-        <a href="logIn.html">log in</a>
-    </h3>
-    <footer style="text-align:center;" ><small style="color:#63696e;"> &copy; Copyrights 2024 syntaxonair@gmail.com</small></footer>
+
+    <footer style="text-align:center;background-color: #e0e0e0;">
+        <small style="color:#63696e;">&copy; 2024 syntaxonair@gmail.com</small>
+    </footer>
 </body>
 </html>
