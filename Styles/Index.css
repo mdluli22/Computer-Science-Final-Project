@@ -42,3 +42,16 @@ header {
     width: 60%;
     background-color: #e0e0e0;
 }
+
+
+.descriptionP{
+    font-family: Courier, monospace;
+
+
+}
+
+.specialSection {
+
+    width: 35%; 
+    background-color: #f0f0f0;
+}
