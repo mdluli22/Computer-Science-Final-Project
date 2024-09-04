@@ -35,3 +35,10 @@ header {
     display: flex;
 
 }
+
+.description{
+
+    color: #42474a; 
+    width: 60%;
+    background-color: #e0e0e0;
+}
