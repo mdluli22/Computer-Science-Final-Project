@@ -1,3 +1,11 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 body {
    padding: 10px 10px;
    font-family: Arial, Helvetica, sans-serif;
@@ -8,11 +16,15 @@ body {
 header {
     text-align: center;
      background-color: #e0e0e0;
+     max-width: 1300px;
 }
 
 .navbar {
-
-    background-color:#42474a;
+ position: sticky;
+display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color:#42474a;
 }
 
 .moto{
@@ -32,12 +44,18 @@ header {
 }
 
 .showSection {
+    display: grid;
+    margin: 10%;
     display: flex;
+    max-width: 900px;
+
 
 }
 
 .description{
-
+    margin : 10px 10px 10px 10px ;
+    padding: 20px ;
+    width: 50%;
     color: #42474a; 
     width: 60%;
     background-color: #e0e0e0;
@@ -49,12 +67,15 @@ header {
 
 
 }
-
+.navLink{
+    text-decoration: none;
+}
 .specialSection {
 
-    width: 35%; 
+    width: 50%; 
     background-color: #f0f0f0;
-
+    margin : 10px 10px 10px 10px ;
+    padding: 10px;
     
 }
 
@@ -71,14 +92,28 @@ header {
 }
 
 .specialBtns{
+    margin: 20px;
     text-align: center;
 
 }
 
-.viewFlightBtn {
-
-    background-color: #42474a;
-    text-decoration: ;
+.viewFlightBtn{
     color: white;
+    background-color: #42474a;
+   
+}
+.findFlightBtn{
+    color: white;
+    background-color: #42474a;
+   
 }
 
+.userExperience{
+
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+     background-color: #e0e0e0;
+}
