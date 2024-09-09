@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    padding: 20px;
+    background-color: #1c1c1e; /* Dark background for header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    flex: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex: 2;
+}
+
+/* .nav-links li {
+    margin-right: 20px;
+} */
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #007aff;
+    transition: background-color 0.3s ease;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #eef2f3;
+}
+
+.flight-search {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.flight-search h1 {
+    margin-bottom: 30px;
+    color: #007aff;
+}
+
+.flight-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.search-btn {
+    background-color: #007aff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.search-btn:hover {
+    background-color: #005bb5;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1e;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

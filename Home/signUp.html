@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax On Air - Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="images/FullLogo_Transparent_NoBuffer.png">
+    <link rel="stylesheet" href="Styles/signup.css">
+</head>
+<body>
+
+    <header>
+        <h1>Create Your Account</h1>
+        <img src="images/FullLogo_Transparent_NoBuffer.png" alt="Syntax On Air Logo">
+    </header>
+
+    <nav>
+        <table>
+            <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="logIn.html">Login</a></td>
+                <td><a href="signUp.html">Sign up</a></td>
+                <td><a href="about.html">About Us</a></td>
+                <td><a href="review.html">Reviews</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <div class="signup-container">
+        <h2>Sign up for an account</h2>
+        <form action="/signup" method="post">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="logIn.html">Login</a></p>
+    </div>
+
+    <footer>
+        <small>&copy; 2024 syntaxonair@gmail.com</small>
+    </footer>
+
+</body>
+</html>
