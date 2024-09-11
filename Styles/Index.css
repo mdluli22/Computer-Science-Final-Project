@@ -61,7 +61,41 @@ display: flex;
     background-color: #e0e0e0;
 }
 
+@media screen and (max-width: 960px) {
 
+    .dropDown .bar {
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background: #fff;
+    }
+  
+    
+    #mobile-menu {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      transform: translate(5%, 20%);
+    }
+  
+    .navbar__toggle .bar {
+      display: block;
+      cursor: pointer;
+    }
+  
+    #mobile.is-active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #mobile.is-active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    #mobile.is-active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
 .descriptionP{
     font-family: Courier, monospace;
 

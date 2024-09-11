@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Schedules</title>
+    <link rel="stylesheet" href="flightSchedule.css">
+</head>
+<body>
+    <header>
+        <img src="images/FullLogo_Transparent_NoBuffer.png" alt="Syntax On Air Logo" class="logo">
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../Home/index.html">Home</a></li>
+                <li><a href="../Home/about.html">About Us</a></li>
+                <li><a href="../Home/review.html">Reviews</a></li>
+                <li><a href="../Home/help.html">Help</a></li>
+            </ul>
+            <div class="user-actions">
+                
+                <a href="../Home/logIn.html" class="sign-in-btn">Sign In</a>
+                <a href="../Home/signUp.html" class="sign-up-btn">Sign Up</a>
+            </div>
+        </nav>
+        
+        <!-- for burger menu for mobile -->
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="review.html">Reviews</a>
+            <a href="help.html">Help</a>
+        </div>
+    </header>
+    <main>
+        <section class="schedule-section">
+            <h2>Flight Timetables</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Flight Number</th>
+                        <th>Departure Time</th>
+                        <th>Arrival Time</th>
+                        <th>Destination</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FL123</td>
+                        <td>08:00 AM</td>
+                        <td>10:00 AM</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>FL456</td>
+                        <td>11:00 AM</td>
+                        <td>01:00 PM</td>
+                        <td>Los Angeles</td>
+                    </tr>
+                    <tr>
+                        <td>FL789</td>
+                        <td>02:00 PM</td>
+                        <td>04:00 PM</td>
+                        <td>Chicago</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Airline. All rights reserved.</p>
+    </footer>
+</body>
+</html>

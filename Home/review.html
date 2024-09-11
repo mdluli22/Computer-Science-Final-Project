@@ -3,50 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syntax On Air</title>
-    <link rel="icon" type="images/x-icon" href="images/FullLogo_Transparent_NoBuffer.png">
+    <title>Customer Feedback</title>
+    <link rel="stylesheet" href="review.css">
 </head>
-<body style="background-color:#f7f7f7; font-family: Arial, sans-serif;">
+<body>
+    <header>
+        <img src="images/FullLogo_Transparent_NoBuffer.png" alt="Syntax On Air Logo" class="logo">
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../Home/index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+            <div class="user-actions">
+                
+                <a href="logIn.html" class="sign-in-btn">Sign In</a>
+                <a href="signUp.html" class="sign-up-btn">Sign Up</a>
+            </div>
+        </nav>
+        
+        <!-- for burger menu for mobile -->
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
 
-    <header style="text-align:center; background-color: #e0e0e0;">
-        <h1 style="color: #42474a; margin: 10px 0;">Reviews</h1>
-        <img src="images/FullLogo_Transparent_NoBuffer.png" style="width: 100%; height: 225px;" alt="Syntax On Air Logo"/>
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="review.html">Reviews</a>
+            <a href="help.html">Help</a>
+        </div>
     </header>
-
-    <nav style="background-color: #42474a;">
-        <table style="width: 100%; text-align: center;">
-            <tr>
-                <td><a href="index.html" style="color: white;">Home</a></td>
-                <td><a href="logIn.html" style="color: white;">Login</a></td>
-                <td><a href="signUp.html" style="color: white;">Sign up</a></td>
-                <td><a href="about.html" style="color: white;">About Us</a></td>
-                <td><a href="review.html" style="color: white;">Reviews</a></td>
-            </tr>
-        </table>
-    </nav>
-
-    <section>
-        <h2>What Our Customers Say</h2>
-
-        <article>
-            <h3>Tywin Langs</h3>
-            <p>"I had a fantastic experience with Syntax On Air. The flight was smooth and the service was top-notch. Highly recommend!"</p>
-        </article>
-
-        <article>
-            <h3>Yuki My Pookie</h3>
-            <p>"The booking process was straightforward, and the staff were very helpful. I will definitely use Syntax On Air again."</p>
-        </article>
-
-        <article>
-            <h3>John Rich with a trustfund Akhona's Future Husband</h3>
-            <p>"A wonderful journey with excellent in-flight amenities. Syntax On Air exceeded my expectations!"</p>
-        </article>
-    </section>
-
-    <footer style="text-align:center; background-color: #e0e0e0;">
-        <small style="color:#63696e;">&copy; 2024 syntaxonair@gmail.com</small>
+    <main>
+        <section class="feedback-section">
+            <h2>Reviews</h2>
+            <table class="feedback-table">
+                <thead>
+                    <tr>
+                        <th>Rating</th>
+                        <th>Comment</th>
+                        <th>Reviewer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>Beautiful experience bandla!</td>
+                        <td>Van Dam</td>
+                    </tr>
+                    <tr>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Good experience, boarding process could be better because of how long I had to wait.</td>
+                        <td>Tyler DeBro</td>
+                    </tr>
+                    <tr>
+                        <td>⭐⭐⭐</td>
+                        <td>Hayi cha ukudla kwenu bekungena nyama bandla.</td>
+                        <td>Mkhonto Wesizwe</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Airline. All rights reserved.</p>
     </footer>
-
 </body>
 </html>

@@ -3,56 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syntax On Air - Sign Up</title>
-    <link rel="icon" type="image/x-icon" href="images/FullLogo_Transparent_NoBuffer.png">
-    <link rel="stylesheet" href="Styles/signup.css">
+    <title>Sign Up - Syntax On Air</title>
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-
     <header>
-        <h1>Create Your Account</h1>
-        <img src="images/FullLogo_Transparent_NoBuffer.png" alt="Syntax On Air Logo">
+        <img src="images/FullLogo_Transparent_NoBuffer.png" alt="Syntax On Air Logo" class="logo">
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="logIn.html" class="sign-in-btn">Sign In</a>
+                <a href="signUp.html" class="sign-up-btn">Sign Up</a>
+            </div>
+        </nav>
+
+        <!-- for burger menu for mobile -->
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="review.html">Reviews</a>
+            <a href="help.html">Help</a>
+        </div>
     </header>
 
-    <nav>
-        <table>
-            <tr>
-                <td><a href="index.html">Home</a></td>
-                <td><a href="logIn.html">Login</a></td>
-                <td><a href="signUp.html">Sign up</a></td>
-                <td><a href="about.html">About Us</a></td>
-                <td><a href="review.html">Reviews</a></td>
-            </tr>
-        </table>
-    </nav>
-
-    <div class="signup-container">
-        <h2>Sign up for an account</h2>
-        <form action="/signup" method="post">
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="input-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-            </div>
-            <button type="submit" class="btn">Sign Up</button>
-        </form>
-        <p class="login-link">Already have an account? <a href="logIn.html">Login</a></p>
-    </div>
+    <main>
+        <section class="auth-form">
+            <h2>Sign Up</h2>
+            <form action="signup.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="logIn.html">Sign In</a></p>
+        </section>
+    </main>
 
     <footer>
-        <small>&copy; 2024 syntaxonair@gmail.com</small>
+        <small>&copy; 2024 Syntax On Air</small>
     </footer>
-
 </body>
 </html>

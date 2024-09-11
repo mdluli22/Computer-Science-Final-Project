@@ -4,73 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syntax On Air</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/FullLogo_Transparent_NoBuffer.png">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Syntax On Air</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-            <div class="user-actions">
-                <!-- <div class="profile">
-                    <img src="profile.jpg" alt="Profile">
-                    <span>+Pro</span>
-                </div> -->
-                <a href="#" class="login">Login</a>
-                <a href="#" class="sign-up-btn">Sign Up</a>
-            </div>
-        </nav>
-    </header>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <img src="images/FullLogo_Transparent_NoBuffer.png" alt="Syntax On Air Logo" class="logo">
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+                <div class="user-actions">
+                    
+                    <a href="logIn.html" class="sign-in-btn">Sign In</a>
+                    <a href="signUp.html" class="sign-up-btn">Sign Up</a>
+                </div>
+            </nav>
 
-    <main>
+            <!-- for burger menu for mobile -->
+            <input type="checkbox" id="burger-toggle" />
+            <label for="burger-toggle" class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
+            <div class="mobile-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="review.html">Reviews</a>
+                <a href="help.html">Help</a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
         <section class="hero">
-            <h1>Time Tracking And Efficient Habits Lead To Success</h1>
-            <p>Overcoming common pitfalls in adopting time tracking and efficient work habits to build lasting success.</p>
-            <div class="email-signup">
-                <input type="email" placeholder="Enter Your Email Here">
-                <button class="btn-signup">Sign Up</button>
+            <div class="hero-content">
+                <h1>Time Tracking And Efficient Habits Lead To Success</h1>
+                <p>Overcoming common pitfalls in adopting time tracking and efficient work habits to build lasting success.</p>
+                <div class="search-bar">
+                    <select>
+                        <option>Location</option>
+                    </select>
+                    <input type="date" placeholder="Date">
+                    <button class="search-btn"><a href="../Book flight/book.html">Book Flight</a></button>
+                    <button class="search-btn"><a href="../Book flight/flightSchedule.html">Schedules</a></button>
+                </div>
             </div>
         </section>
 
         <section class="tickets-special">
-        <h2>Tickets on Special</h2>
-        <div class="tickets-container">
-            <div class="ticket-card">
-                <div class="airline">Etihad Airways</div>
-                <div class="flight-info">
-                    <span>SUB → DPS</span>
-                    <span>Direct | 55m</span>
+            <h2>Tickets on Special</h2>
+            <div class="tickets-container">
+                <div class="ticket-card">
+                    <div class="airline">Etihad Airways</div>
+                    <div class="flight-info">
+                        <span>SUB → DPS</span>
+                        <span>Direct | 55m</span>
+                    </div>
+                    <div class="price">R34.92/Pax</div>
+                    <div class="special-tag">Free Reschedule</div>
                 </div>
-                <div class="price">$34.92/Pax</div>
-                <div class="special-tag">Free Reschedule</div>
-            </div>
-            <div class="ticket-card">
-                <div class="airline">Citilink</div>
-                <div class="flight-info">
-                    <span>SUB → DPS</span>
-                    <span>Direct | 55m</span>
+                <div class="ticket-card">
+                    <div class="airline">Citilink</div>
+                    <div class="flight-info">
+                        <span>SUB → DPS</span>
+                        <span>Direct | 55m</span>
+                    </div>
+                    <div class="price">R41.01/Pax</div>
+                    <div class="special-tag">Free Protection</div>
                 </div>
-                <div class="price">$41.01/Pax</div>
-                <div class="special-tag">Free Protection</div>
-            </div>
-            <div class="ticket-card">
-                <div class="airline">Lion Air</div>
-                <div class="flight-info">
-                    <span>SUB → DPS</span>
-                    <span>Direct | 55m</span>
+                <div class="ticket-card">
+                    <div class="airline">Lion Air</div>
+                    <div class="flight-info">
+                        <span>SUB → DPS</span>
+                        <span>Direct | 55m</span>
+                    </div>
+                    <div class="price">R29.50/Pax</div>
+                    <div class="special-tag">Discounted Fare</div>
                 </div>
-                <div class="price">$29.50/Pax</div>
-                <div class="special-tag">Discounted Fare</div>
             </div>
-        </div>
-    </section>
-    </main>
+        </section>
+
+        <section class="vid-table">
+            <h2>Travel Tips</h2>
+            <table class="for-video">
+                <tr>
+                    <td class="prep">
+                        <h2>Are you nervous about flight abroad?</h2>
+                        <h3>Well here are some tips which will help you feel like you are better prepared.</h3>
+                    </td>
+                    <td>
+                        <aside class="vid">
+                            <iframe src="https://www.youtube.com/embed/k97G2YC3I60"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                        </aside>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <iframe src="https://www.youtube.com/embed/HhaJBpNr5zs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </td>
+                    <td>
+                        <h2>Don't know how and what to pack to keep your bag small?</h2>
+                        <h3>Here are tips are tricks on how to keep pack your bag and avoid long queues.</h3>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <aside>
+            <div  class="tips"><a href="https://www.flysaa.com/manage-fly/baggage/restricted-items">Restricted Items</a></div>
+        </aside>
+
+        <footer>
+            <p>Contact Us</p><br>
+            <p>&copy; 2024 Syntax On Air. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>

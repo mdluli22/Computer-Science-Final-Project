@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9; /* Light background */
+    color: #1c1c1e; /* Dark text */
+    overflow-x: hidden;
+}
+
+/* Header section */
+header {
+    padding: 1.25rem;
+    background-color: #1c1c1e; /* Dark background for header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    flex: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.875rem;
+    justify-content: center;
+    flex: 2;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #6fc1ff; /* Soft highlight color */
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.9375rem;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.profile img {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 50%;
+}
+
+.sign-in-btn {
+    background-color: #007aff; /* Blue action button */
+    color: white;
+    padding: 0.625rem 1.25rem;
+    text-decoration: none;
+    border-radius: 1.25rem;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 3.125rem 1.25rem;
+    background-color: #1c1c1e;
+    color: #ffffff;
+    border-bottom-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+    margin-bottom: 3.125rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.9375rem;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #adb5bd; /* Softer text */
+    margin-bottom: 1.875rem;
+}
+
+.email-signup {
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+.email-signup input {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.625rem;
+    width: 18.75rem;
+}
+
+.btn-signup {
+    background-color: #007aff;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+
+/* Tracking info section */
+.tracking-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.25rem 0;
+    flex-wrap: wrap;
+}
+
+.time-tracking-card, .task-list, .task-statistics, .scheduled-time {
+    background-color: #ffffff;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    width: 18.75rem;
+    margin: 1.25rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.time-tracking-card:hover, .task-list:hover, .task-statistics:hover, .scheduled-time:hover {
+    transform: translateY(-0.3125rem); /* Lift effect on hover */
+}
+
+.time-tracking-card h3, .task-list h3, .task-statistics h3, .scheduled-time h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.9375rem;
+    color: #1c1c1e;
+}
+
+.graph, .chart {
+    height: 6.25rem;
+    background-color: #f4f4f9;
+    border-radius: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.duration {
+    font-size: 1.3rem;
+    color: #007aff; /* Highlight for important info */
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+    color: #6c757d; /* Softer gray text for lists */
+}
+
+ul li {
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
+}
+
+/* Button styles for flight-like design */
+button, .btn-signup {
+    background-color: #007aff;
+    color: white;
+    padding: 0.625rem 1.5625rem;
+    border: none;
+    border-radius: 1.5625rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn-signup:hover {
+    background-color: #0056b3;
+}
+
+/* tickets that are on special */
+.tickets-special {
+    text-align: center;
+    padding: 2.5rem 1.25rem;
+    background-color: #f4f4f9;
+    border-radius: 1.25rem;
+    margin: 3.125rem 0;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: pull-up 1s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes pull-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tickets-special h2 {
+    font-size: 2rem;
+    color: #1c1c1e;
+    margin-bottom: 1.25rem;
+}
+
+.tickets-container {
+    display: flex;
+    justify-content: space-evenly; /* Spread the tickets evenly */
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    max-width: 100%; /* Allow it to take full width */
+}
+
+.ticket-card {
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    width: 20rem; /* Increased width */
+    transition: transform 0.3s ease;
+}
+
+.ticket-card:hover {
+    transform: translateY(-0.3125rem);
+}
+
+.airline {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1c1c1e;
+    margin-bottom: 0.625rem;
+}
+
+.flight-info {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 0.9375rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #007aff;
+    margin-bottom: 0.9375rem;
+}
+
+.special-tag {
+    background-color: #ff5a3c;
+    color: #fff;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.625rem;
+    font-size: 0.9rem;
+}
