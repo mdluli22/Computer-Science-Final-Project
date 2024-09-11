@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax On Air - Login</title>
+    <link rel="icon" type="image/x-icon" href="images/FullLogo_Transparent_NoBuffer.png">
+    <link rel="stylesheet" href="Styles/login.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome Back!</h1>
+        <img src="images/FullLogo_Transparent_NoBuffer.png" alt="Syntax On Air Logo">
+    </header>
+
+    <nav>
+        <table>
+            <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="logIn.html">Login</a></td>
+                <td><a href="signUp.html">Sign up</a></td>
+                <td><a href="about.html">About Us</a></td>
+                <td><a href="review.html">Reviews</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <div class="login-container">
+        <h2>Login to your account</h2>
+        <form action="/login" method="post">
+            <div class="input-group">
+                <label for="username">Email</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p class="signup-link">Don't have an account? <a href="signUp.html">Sign up</a></p>
+    </div>
+
+    <footer>
+        <small>&copy; 2024 syntaxonair@gmail.com</small>
+    </footer>
+
+</body>
+</html>
