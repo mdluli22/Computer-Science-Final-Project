@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <header>
+            <h1>Book Your Flight</h1>
+        </header>
+        <main>
+            <form class="booking-form">
+                <!-- Departure Select Box -->
+                <label for="departure">Departure Airport:</label>
+                <select id="departure" name="departure" required>
+                    <option value="" disabled selected hidden>Select Departure</option>
+                </select>
+                <div id="departure-error" class="error-message"></div>
+
+                <!-- Destination Select Box -->
+                <label for="destination">Destination Airport:</label>
+                <select id="destination" name="destination" required>
+                    <option value="" disabled selected hidden>Where are you going?</option>
+                </select>
+                <div id="destination-error" class="error-message"></div>
+
+                <!-- Departure Date Input -->
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+                <div id="date-error" class="error-message"></div>
+
+                <!-- Return Date Input -->
+                <label for="return-date">Return Date (Optional):</label>
+                <input type="date" id="return-date" name="return-date">
+                <div id="return-date-error" class="error-message"></div>
+
+                <!-- Submit Button -->
+                <button type="submit"><a href="userFlights.html">Book Flight</a></button>
+            </form>
+            <button class="back-to-menu-btn"><a href="../Home/index.html">Go Back to Menu</a></button>
+        </main>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="book.js"></script>
+</body>
+</html>
+
+
+

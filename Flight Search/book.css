@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Effect */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    background-size: 20px 20px;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
+    animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 0.5; }
+    50% { opacity: 0.2; }
+    100% { opacity: 0.5; }
+}
+
+/* Container */
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    background: white;
+    max-width: 700px; /* Increased container width */
+    margin: 3rem auto; /* Increased top margin */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem; /* Added more space below the header */
+}
+
+header h1 {
+    color: #333;
+    font-size: 1.8rem; /* Larger header font */
+}
+
+/* Form Styles */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increased spacing between form fields */
+}
+
+.booking-form label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Updated styles for both input and select elements */
+.booking-form input, 
+.booking-form select {
+    padding: 0.75rem; /* Increased padding for larger input fields */
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Slightly rounded corners */
+    font-size: 1rem; /* Larger font size for inputs */
+    width: 100%; /* Ensure full width of the container */
+    max-width: 100%; /* Prevent overflow */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.booking-form button, 
+.back-to-menu-btn {
+    padding: 0.85rem; /* Increased padding for buttons */
+    border: none;
+    background-color: #ff5a3c;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem; /* Increased font size */
+}
+
+.booking-form button:hover, 
+.back-to-menu-btn:hover {
+    background-color: #e74c3c;
+}
+
+/* Go Back to Menu Button */
+.back-to-menu-btn {
+    margin-top: 2rem; /* Added more space above the button */
+    background-color: #007bff;
+    width: 100%; /* Full width button */
+}
+
+.back-to-menu-btn:hover {
+    background-color: #0056b3;
+}
+
